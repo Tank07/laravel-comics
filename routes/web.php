@@ -35,7 +35,7 @@ Route::get('/fumetti/{id}', function ($id) {
       
         $comic = $comics[$id];
 
-        return view('fumetto', [ 'fumettoDio' => $comic ] );
+        return view('fumetto', [ 'fumettoUno' => $comic ] );
 
     } else {
         abort(404);

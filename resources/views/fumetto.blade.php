@@ -5,12 +5,13 @@
 @section('content')
     
     <div >
-        <img src=" {{ $fumettoDio['thumb'] }} " alt="">
-        <h2>{{ $fumettoDio['title'] }}</h2>
-        <p>{{ $fumettoDio['price'] }}</p>
-        <p>{{ $fumettoDio['description'] }} </p>
-        {{-- <p> Art by: {{ $fumettoDio['artists'] }} </p>
-        <p> Written by: {{ $fumettoDio['writers'] }} </p> --}}
+        <img src=" {{ $fumettoUno['thumb'] }} " alt="">
+        <h2>{{ $fumettoUno['title'] }}</h2>
+        <p>{{ $fumettoUno['price'] }}</p>
+        <p>{{ $fumettoUno['description'] }} </p>
+        @foreach ( $fumettoUno as $fumetto )
+        {{-- <p> Art by: {{ $fumettoUno['artists'] }} </p>
+        <p> Written by: {{ $fumettoUno['writers'] }} </p> --}}
     </div>
 
 @endsection
